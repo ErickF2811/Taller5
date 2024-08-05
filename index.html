@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Galería de Fotos</h1>
+        <div class="upload-section">
+            <h2>Subir Fotos</h2>
+            <input type="file" id="file-upload" multiple>
+            <button id="upload-button">Subir</button>
+        </div>
+        <div class="form-section">
+            <h2>Registrar Foto</h2>
+            <form id="photo-form">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="get-section">
+            <h2>Recuperar Información</h2>
+            <button id="get-button">Obtener Datos</button>
+            <pre id="response-output"></pre>
+        </div>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+    <script src="app (2).js"></script>
+</body>
+</html>
+
+
